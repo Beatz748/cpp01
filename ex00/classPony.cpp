@@ -1,3 +1,0 @@
-#include "classPony.hpp"
-
-

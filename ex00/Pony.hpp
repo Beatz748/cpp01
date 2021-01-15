@@ -2,7 +2,7 @@
 # define CLASSPONY_HPP
 
 # include <string>
-
+# include <iostream>
 
 using	std::string;
 
@@ -12,11 +12,13 @@ class Pony
 		string	name;
 		int		age;
 		string	sex;
-		
+
 	public:
-		Pony();
+		Pony(string n, int a, string s);
 		~Pony();
-		void
+	void	call_name();
+	void	age_sex();
+	void	do_something();
 };
 
 
