@@ -16,8 +16,7 @@ int    sed(string filename, string s1, string s2)
     ifstream    input;
     ofstream    output;
     string      str;
-    int         i;
-    int         size;
+    size_t         i;
     
     input.open(filename);
     filename+= ".replace";

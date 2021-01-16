@@ -10,7 +10,6 @@ using	std::string;
 class	Brain
 {
 	private:
-		int		iq;
 		string	color;
 		string	addr;
 	public:
