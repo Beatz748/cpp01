@@ -12,9 +12,10 @@ class Zombie
 		string	name;
 		string	type;
 	public:
-		Zombie();
+		Zombie(){name = ""; type = "";};
 		Zombie(string name, string type);
 		~Zombie();
+	void	get_name(string name, string type);
 	void	announce();
 };
 
