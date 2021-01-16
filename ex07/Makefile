@@ -6,11 +6,11 @@ DIR_SRCS	=	./
 
 OBJS		=	$(SRCS:%.cpp=$(DIR_OBJS)%.o)
 
-CC			= clang++
+CC			= clang++ -g
 
 CC_FLAGS	=  -std=c++98
 
-NAME		= sed_for_losers
+NAME		= replace
 
 RM			= rm -rf
 

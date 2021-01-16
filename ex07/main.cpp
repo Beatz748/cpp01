@@ -1,7 +1,6 @@
 # include <string>
 # include <iostream>
 # include <fstream>
-# include <cerrno>
 
 using   std::string;
 using   std::cout;
@@ -18,10 +17,16 @@ int    sed(string filename, string s1, string s2)
     ofstream    output;
     string      str;
     int         i;
+    int         size;
     
     input.open(filename);
-    filename+= ".repalce";
+    filename+= ".replace";
     output.open(filename);
+    if (s1.empty() || s2.empty() || !s1.compare(s2))
+    {
+        cout << "🙃" << endl;
+        return (42);
+    }
     if (!input || !output || !input.is_open() || !output.is_open())
     {
         cout << "can u enter filename normally?!" << endl;
@@ -30,7 +35,7 @@ int    sed(string filename, string s1, string s2)
     while (getline(input, str))
     {
         while ((i = str.find(s1)) != str.npos)
-            str.replace(i, s2.length(), s2);
+            str.replace(i, s1.length(), s2);
         output << str;
         if (i == str.npos)
             output << endl;
