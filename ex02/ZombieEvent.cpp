@@ -16,8 +16,8 @@ Zombie*	ZombieEvent::randomChump()
 {
 	Zombie	*zomb;
 	string	names[] = {"lmireya", "jtambra", "smatha"};
+	srand(time(NULL));
 	zomb = new Zombie(names[rand() % 3], this->type);
 	zomb->announce();
-	srand(time(NULL));
 	return (zomb);
 }

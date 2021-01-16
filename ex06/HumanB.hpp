@@ -13,7 +13,7 @@ class HumanB
     public:
         HumanB(string name);
         ~HumanB();
-        void    setWeapon(Weapon weapon);
+        void    setWeapon(Weapon& weapon);
         void    attack();
 };
 

@@ -4,9 +4,8 @@
 int	main()
 {
 	std::string	str = "hi";
-	std::string	*pointer = &str;
-	std::string	&ref = str;
-	std::string lol = "lol";
+	std::string* pointer = &str;
+	std::string& ref = str;
 
 	std::cout << "ADDRESS OF MAIN STR - " << &str << std::endl;
 	std::cout << "ADDRESS OF POINTER - " << pointer << std::endl;

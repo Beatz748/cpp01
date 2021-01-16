@@ -16,7 +16,7 @@ void    HumanB::attack()
                 << std::endl;
 }
 
-void    HumanB::setWeapon(Weapon weapon)
+void    HumanB::setWeapon(Weapon& weapon)
 {
     this->weapon = &weapon;
 }
