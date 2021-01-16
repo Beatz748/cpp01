@@ -10,6 +10,7 @@ int	main()
 	event.setZombieType("bruh");
 	zombie1 = event.randomChump();
 	delete(zombie1);
+
 	event.setZombieType("student");
 	zombie2 = event.newZombie("Jenya");
 	zombie2->announce();
