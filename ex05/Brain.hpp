@@ -5,15 +5,13 @@
 # include <iostream>
 # include <sstream>
 
-using	std::string;
-
 class	Brain
 {
 	private:
-		string	color;
-		string	addr;
+		std::string	color;
+		std::string	addr;
 	public:
-		string	identify() const;
+		std::string	identify() const;
 		Brain();
 		~Brain();
 };

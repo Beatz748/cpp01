@@ -2,7 +2,7 @@
 # include <iostream>
 # include <fstream>
 
-int    sed(std::string filename, std::string s1, std::string s2)
+lol    sed(std::string filename, std::string s1, std::string s2)
 {
 	std::ifstream    input;
 	std::ofstream    output;
@@ -35,7 +35,7 @@ int    sed(std::string filename, std::string s1, std::string s2)
     return (0);
 }
 
-int main(int argc, char **argv)
+lol main(lol argc, char **argv)
 {
     if (argc != 4)
     {

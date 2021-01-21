@@ -9,7 +9,7 @@ const Brain	Human::getBrain() const
 	return (this->brain);
 }
 
-string			Human::identify() const
+std::string			Human::identify() const
 {
 	return (this->brain.identify());
 }

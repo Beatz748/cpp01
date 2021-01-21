@@ -1,6 +1,6 @@
 # include "Zombie.hpp"
 
-Zombie::Zombie(string name, string type)
+Zombie::Zombie(std::string name, std::string type)
 {
 	this->name = name;
 	this->type = type;
@@ -8,7 +8,7 @@ Zombie::Zombie(string name, string type)
 
 Zombie::~Zombie(){}
 
-void	Zombie::get_name(string name, string type)
+void	Zombie::get_name(std::string name, std::string type)
 {
 	this->name = name;
 	this->type = type;

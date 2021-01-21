@@ -1,6 +1,6 @@
 # include "HumanA.hpp"
 
-HumanA::HumanA(string name, Weapon &weapon) : weapon(weapon)
+HumanA::HumanA(std::string name, Weapon &weapon) : weapon(weapon)
 {
     this->name = name;
 }

@@ -9,7 +9,7 @@ Brain::Brain()
 }
 Brain::~Brain(){}
 
-string	Brain::identify() const
+std::string	Brain::identify() const
 {
 	return (this->addr);
 }

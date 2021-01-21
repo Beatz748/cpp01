@@ -1,6 +1,6 @@
 #include "Pony.hpp"
 
-Pony::Pony(string n, int a, string s)
+Pony::Pony(std::string n, int a, std::string s)
 {
 	this->name = n;
 	this->age = a;

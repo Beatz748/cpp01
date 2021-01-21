@@ -1,6 +1,6 @@
 # include "Zombie.hpp"
 
-Zombie::Zombie(string name, string type)
+Zombie::Zombie(std::string name, std::string type)
 {
 	this->name = name;
 	this->type = type;

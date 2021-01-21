@@ -4,17 +4,15 @@
 # include <string>
 # include <iostream>
 
-using	std::string;
-
 class Pony
 {
 	private:
-		string	name;
+		std::string	name;
 		int		age;
-		string	sex;
+		std::string	sex;
 
 	public:
-		Pony(string n, int a, string s);
+		Pony(std::string n, int a, std::string s);
 		~Pony();
 	void	call_name();
 	void	age_sex();

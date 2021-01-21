@@ -5,12 +5,10 @@
 # include <iostream>
 # include "Zombie.hpp"
 
-using	std::string;
-
 class ZombieEvent
 {
 	private:
-		string	type;
+		std::string	type;
 	public:
 			ZombieEvent(){type = "no type";};
 		Zombie*	newZombie(std::string name);
